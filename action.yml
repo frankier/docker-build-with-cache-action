@@ -19,6 +19,9 @@ inputs:
   session:
     description: (Optional) Docker registry's session (extra auth parameters). For the AWS ECR, means setting AWS_SESSION_TOKEN environment variable).
     required: false
+  already_authenticated:
+    description: (Optional) Set to true if you've already authenticated to the registry. This will skip the login step.
+    required: false
   registry:
     description: "(Optional) Docker registry (default: Docker Hub's registry)"
     required: false

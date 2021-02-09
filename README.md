@@ -37,6 +37,8 @@ or
 
 - **session**: Extra auth parameters. For AWS ECR, means setting AWS_SESSION_TOKEN environment variable.
 
+- **already_authenticated**: Set to true if you've already authenticated to the registry. This will skip the login step.
+
 - **push_git_tag**: In addition to `image_tag`, you can also push the git tag in your [branch tip][branch tip] (default: `false`).
 
 - **pull_image_and_stages**: Set to `false` to avoid pulling from the registry or to build from scratch (default: `true`).

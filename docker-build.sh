@@ -320,7 +320,9 @@ logout_from_registry() {
 # run the action
 init_variables
 check_required_input
-login_to_registry
+if [ "$INPUT_ALREADY_AUTHENTICATED" = false ]; then
+  login_to_registry
+fi
 pull_cached_stages
 build_image
 tag_image
